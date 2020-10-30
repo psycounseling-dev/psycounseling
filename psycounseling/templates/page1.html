@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>menu table content</title>
+</head>
+<body>
+    <h1> menu table content </h1>
+    <hr>
+    <table border = "1"> 
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+        {% for getdata in Menu %}
+        <tr>
+            <td>{{ getdata.key }}</td>
+            <td>{{ getdata.value }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
